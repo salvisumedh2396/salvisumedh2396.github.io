@@ -1,0 +1,24 @@
+.is_smaller{
+    height: 10px;
+    width: 20px;
+}
+
+.nes-icon.is-small {
+    margin: 0;
+    transform: scale(0.6);
+}
+
+.nes-mario {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 60px;
+}
+
+.nes-container {
+    position: relative;
+    padding: 1.5rem 0.5rem;
+    border-color: #000;
+    border-style: solid;
+    border-width: 4px;
+}
