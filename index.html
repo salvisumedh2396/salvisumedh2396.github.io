@@ -1,67 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sumedh's Resume</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sumedh's Info Page</title>
+    <!-- latest -->
     <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css">
+    <style>
+        body {
+            padding-bottom: 50px;
+        }
+        .nes-progress {
+            height: 25px;
+        }
+    </style>
 </head>
-<body>
-    <nav style='padding: 20px; border-bottom: 3px solid #ccc;
-    margin-bottom: 60px;'>
 
+<body>
+
+    <!-- Navigation bar -->
+    <nav style='padding: 20px; border-bottom: 3px solid #ccc; margin-bottom: 60px;'>
         <div class="container">
-            <h2>
-                <i class="nes-icon is-small nes-mario "></i>
-                Sumedh Salvi
+            <h2 style='margin-bottom: 0;'>
+                <i class="nes-mario " style=" position: relative; display: inline-block; width: 40px; height: 60px; margin:0; transform: scale(0.6);"></i><span style="margin-left: 30px;">Sumedh Salvi</span>
             </h2>
+
         </div>
-        
     </nav>
 
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <i class="nes-bcrikko"></i>
+    <!-- Welcome "banner"/NES Balloon -->
+    <div class="container" style='margin-bottom: 50px;'>
+        <div class="row bottom-md bottom-xs">
+            <div class="col-sm-1 last-xs first-md from-left">
+                <i class="nes-octocat animate"></i>
             </div>
             <div class="col-sm-9 col-xs-12">
                 <div class="nes-balloon from-left">
-                    <p>I'm Sumedh. This is everything about me 
-                        <i class="nes-icon heart"></i></p>
+                    <p>Hi..!! I'm Sumedh. This is everything about me <i class="nes-icon is-small heart"></i></p>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Main body content; 2 columns -->
     <div class="container">
         <div class="row">
-            <div class="col-xs-12">
-                <h2 id="about">
-                    <a href="#about">#</a>
-                    "About"
-                </h2>
-                <p>Unicersal text asdasdasdasdasdasdasdasdasdasdasd</p>
-            </div>
+            <!-- Main left column -->
             <div class="col-md-4 col-sm-12 col-xs-12">
-                <div class="nes-container with-title">
-                    <h3 class="title">Things I Do</h3>
+                <section class="nes-container with-title" style="padding-left: 9px;">
+                    <h3 class="title">Tech I Use</h3>
                     <div>
                         <div class="lists">
-                            <ul class="nes-list is-circle">
-                                <li>Web Developer</li>
-                                <li>Full Stack Developer</li>
+                            <ul class="nes-list is-circle" style='margin-bottom: 0;'>
+                                <li>Backend Languages:</li>
+                                    <ul class="nes-list is-circle">
+                                        <li>C</li>
+                                        <li>C++</li>
+                                        <li>Java</li>
+                                        <li>Python</li>
+                                        <li>PHP</li>
+                                    </ul>
+                                <li>Frontend Languages:</li>
+                                    <ul class="nes-list is-circle">
+                                        <li>HMTL [5]</li>
+                                        <li>CSS [3]</li>
+                                        <li>JavaScript</li>
+                                        <li>React</li>
+                                        <li>Angular</li>
+                                    </ul>
+                                <li>Frameworks:</li>
+                                    <ul class="nes-list is-circle">
+                                        <li>Spring</li>
+                                        <li>Django</li>
+                                    </ul>
                             </ul>
                         </div>
                     </div>
-                </div>
+                </section>
+
+                <section class="nes-container with-title is-dark" style='margin-top: 50px; margin-bottom: 50px; padding-left: 9px;'>
+                    <h3 class="title">Education</h3>
+                    <div>
+                        <i class="nes-ash" style=" position: relative; display: inline-block; width: 40px; height: 60px; margin:0; transform: scale(0.5);"></i>
+                        <span style="padding-left: 10px;">VIIT,Pune,IN</span>
+                    </div>
+                </section>
+
+                <section class="nes-container with-title" style="padding-left: 9px;">
+                    <h3 class="title">Interests</h3>
+                    <a href="#" class="nes-badge">
+                        <span class="is-primary" style="width: 10em; height: 1em;">Sketching</span>
+                    </a><a href="#" class="nes-badge">
+                        <span class="is-success" style="width: 10em; height: 1em;">Reading</span>
+                    </a>
+                    <a href="#" class="nes-badge">
+                        <span class="is-warning" style="width: 10em; height: 1em;">Coding</span>
+                    </a>
+                </section>
+
+
+                <section class="nes-container with-title is-dark" style='margin-top: 50px; margin-bottom: 50px;'>
+                    <h3 class="title">My Socials</h3>
+                    <div>
+                        <a href="https://www.linkedin.com/in/sumedh-salvi/">
+                            <i class="nes-icon linkedin"></i>
+                        </a>
+                        <a href="https://github.com/salvisumedh2396">
+                            <i class="nes-icon github"></i>
+                        </a>
+                    </div>
+                </section>
+
+                <section class="nes-container with-title" style="margin-top: 50px; margin-bottom: 50px; padding-left: 9px;">
+                    <h3 class="title">Formal Resume</h3>
+                    <a class="nes-btn is-success" href="https://github.com/salvisumedh2396/salvisumedh2396.github.io/raw/main/ResumeFinal.pdf" style="font-size: 10px;" download>Download CV</a>
+                </section>
+
             </div>
+
+            <!-- Main right column -->
             <div class="col-md-8 col-sm-12 col-xs-12">
-                right
+                <div class="nes-container with-title is-dark">
+                    <p class="title">Projects<span style="font-size: 10px; color: lightslategrey;">(Details in CV linked below)</span></p>
+                    <div class="row" style=" margin-bottom: 10px;">
+                        <span><i class="nes-icon coin is-small" style="width: 10px; transform: scale(1.4); margin-right:5px"></i><span style="margin-left: 15px;">RATAN: Smart B2B Communicator <a href="https://medium.com/@gsehiring/henry-connect-instantly-and-seal-more-deals-c8729b5c4264" ><i class="nes-icon medium is-small" style="border: 1px; border-style: solid; border-color:lightsteelblue;"></i></a></span></span>
+                    </div>
+                    <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+                        <span><i class="nes-icon coin is-small" style="transform: scale(1.4); margin-right:5px"></i><span style="margin-left: 15px;">Smart Idea Submission Portal</span></span>
+                    </div>
+                    <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+                        <span><i class="nes-icon coin is-small" style="transform: scale(1.4); margin-right:5px"></i><span style="margin-left: 15px;">Potential Tester</span></span>
+                    </div>
+                    <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+                        <span><i class="nes-icon coin is-small" style="transform: scale(1.4); margin-right: 12px; "></i>DIVERT: A Distributed Vehicular Traffic Re-routing System for Congestion Avoidance</span>
+                    </div>
+                </div>
+
+                <div class="nes-container with-title" style='margin-top: 40px;'>
+                    <p class="title">Research & Scholarship</p>
+                    <div class="row" style="margin-bottom: 20px;">
+                        <i class="nes-pokeball is-small" style="width: 10px; height: 0px; transform: scale(0.2)"></i><a href="https://ieeexplore.ieee.org/document/9033835" style="margin-left: 10px;"><span style="margin-left: 30px;">Published paper 'Permutation Algorithm Analysis and Updation', IEEE, I2CT, Pune - 2019 <i class="nes-icon google is-small"></i></a></span>
+                    </div>
+                    <div class="row" style="margin-bottom: 20px;">
+                        <i class="nes-pokeball is-small" style="width: 10px; height: 0px; transform: scale(0.2)"></i><a href="https://ieeexplore.ieee.org/document/8697704" style="margin-left: 10px;"><span style="margin-left: 30px;">Published paper 'RATAN: A Smart Business to Business (B2B) Communicator', IEEE, ICCUBEA, Pune - 2018 <i class="nes-icon google is-small"></i></a></span>
+                    </div>
+                    <div class="row" style="margin-bottom: 20px;">
+                        <i class="nes-pokeball is-small" style="width: 10px; height: 0px; transform: scale(0.2)"></i><a href="https://graduation.udacity.com/confirm/E4X4GGLG" style="margin-left: 10px;"><span style="margin-left: 30px;">Received ’Google India Challenge Scholarship’ from Udacity for the course ’Android Basics Nanodegree by Google’<i class="nes-icon google is-small"></i></a></span>
+                    </div>
+                    
+                </div>
+
+
+                <div class="nes-container with-title" style='margin-top: 40px;'>
+                    <p class="title">Recent Memorable Moments</p>
+                    <div class="row" style=" margin-bottom: 10px;">
+                        <span><span class="nes-btn" style="margin-left: 10px; text-align: left;"><i class="nes-icon trophy is-small" style="width: 10px; transform: scale(1.4); margin-right:25px"></i>Received 'Client Comforter' award in 2019.</span></span>
+                    </div>
+                    <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+                        <span><span class="nes-btn is-success" style="margin-left: 10px; text-align: left;"><i class="nes-icon trophy is-small" style="width: 10px; transform: scale(1.4); margin-right:25px"></i>Received ’Best Class Representative’ Award - 2018</span></span>
+                    </div>
+                    <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+                        <span><span class="nes-btn is-warning" style="margin-left: 10px; text-align: left;"><i class="nes-icon trophy is-small" style="width: 10px; transform: scale(1.4); margin-right:25px"></i>Vice President for CSI - 2018</span></span>
+                    </div>
+                    <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+                        <span><span class="nes-btn is-error" style="margin-left: 10px; text-align: left;"><i class="nes-icon trophy is-small" style="width: 10px; transform: scale(1.4); margin-right:25px"></i>President for ACE - 2017</span></span>
+                    </div>
+                    <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+                        <span><span class="nes-btn is-primary" style="margin-left: 10px; text-align: left;"><i class="nes-icon trophy is-small" style="width: 10px; transform: scale(1.4); margin-right:25px"></i>Joint Technical Secretary for the annual technical event 'Perception - 2018'</span></span>
+                    </div>
+                    <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+                        <span><span class="nes-btn is-warning " style="margin-left: 10px; text-align: left;"><i class="nes-icon trophy is-small" style="width: 10px; transform: scale(1.4); margin-right:25px"></i>Chief Editor for Magazine MSB (Most Significant Bit) & Newsletter - 2018</span></span>
+                    </div>
+                </div>
+
+                <h3 class="topic-title" style='margin-top: 40px;'>
+                    <i class="nes-icon star"></i> Previous Experience
+                </h3>
+                <section class="nes-container is-dark">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <img src="https://media-exp1.licdn.com/dms/image/C510BAQEuAz_ZD3VJPw/company-logo_200_200/0?e=2159024400&v=beta&t=UNiPnhRLjSu5F-BCHMaGUsvvNRCegpsVN8xEIfQU2rM" style='width: 75%; height: auto; image-rendering: pixelated; image-rendering: -moz-crisp-edges; '>
+                        </div>
+                        <div class="col-xs-10">
+                            <h3>Principal Global Services</h3>
+                            <p>Analyst & Developer</p>
+                        </div>
+                    </div>
+                    <div class="row" style='margin-top: 30px;'>
+                        <div class="col-xs-2">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQSHd4oVMEDvhdDUuzabDxpGY8XwZ6ZjVhhVA&usqp=CAU" style='width: 75%; height: auto; image-rendering: pixelated; image-rendering: -moz-crisp-edges; '>
+                        </div>
+                        <div class="col-xs-10">
+                            <h3>Global Super Elite</h3>
+                            <p>Trainee Developer</p>
+                        </div>
+                    </div>
+                    <div class="row" style='margin-top: 30px;'>
+                        <div class="col-xs-2">
+                            <img src="https://images.shiksha.com/mediadata/images/1571916731phpPW0r3m.png" style='width: 75%; height: auto; image-rendering: pixelated; image-rendering: -moz-crisp-edges; '>
+                        </div>
+                        <div class="col-xs-10">
+                            <h3>CDAC (Centre for Development of Advanced Computing)</h3>
+                            <p>Trainee Researcher</p>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </div>
+
+    <div class="container" style='margin-top: 50px; font-size: 60%;'>
+        <div class="row">
+            <div class="col-xs-12" style='text-align: center; color: #ccc;'>
+                Thanks nes.css for the css. &copy;oming up with a fresh look soon \_(ツ)_/
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
