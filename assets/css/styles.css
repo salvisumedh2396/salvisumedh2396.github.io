@@ -626,7 +626,7 @@ a.home__social:nth-child(2):hover {
 
 .about__img {
   width: 150px;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   margin: 0 auto;
 }
 
